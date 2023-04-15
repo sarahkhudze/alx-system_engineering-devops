@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Find all subdirectories of the current directory and add execute permission for the owner, group, and others
+find . -type d -exec chmod ugo+x {} \;
+
+# Print a message indicating that the script has finished
+echo "Success: Execute permission has been added to all subdirectories in the current directory."

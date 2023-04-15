@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Use the chmod command to add execute permission to the owner of the file hello
+chmod u+x hello
+
+# Print a message indicating that the permissions have been changed
+echo "Execute permission has successfully  been added to the owner of file hello."

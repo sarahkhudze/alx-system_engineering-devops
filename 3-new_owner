@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Use the chown command to change the owner of the file
+sudo chown betty hello
+
+# Print a message indicating that the ownership has been changed
+echo "Ownership of file hello has been changed to betty."

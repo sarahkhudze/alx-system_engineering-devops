@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Use the chmod command to set permissions for the file hello
+chmod 000 hello
+chmod +rwx hello
+
+# Print a message indicating that the permissions have been changed
+echo "Success: Permissions have been updated for file hello."

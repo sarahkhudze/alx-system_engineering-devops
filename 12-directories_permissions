@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Create a directory called my_dir in the working directory with permissions 751
+mkdir -m 751 my_dir
+
+# Print a message indicating that the script has finished
+echo "Success: The directory my_dir has been created in the working directory with permissions 751."

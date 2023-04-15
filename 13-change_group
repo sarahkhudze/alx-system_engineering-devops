@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Change the group owner of the file hello to school
+chgrp school hello
+
+# Print a message indicating that the script has finished
+echo "Success: The group owner of the file hello has been changed to school."

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Get the mode of the file olleh
+mode=$(stat -c %a olleh)
+
+# Use the chmod command to set the mode of the file hello to match olleh's mode
+chmod $mode hello
+
+# Print a message indicating that the mode has been changed
+echo "Success: Mode has been updated for file hello to match olleh's mode."

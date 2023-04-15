@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Use the chmod command to set the mode for the file hello
+chmod 753 hello
+
+# Print a message indicating that the mode has been changed
+echo "Mode has been updated for file hello."

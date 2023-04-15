@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Use the touch command to create an empty file called hello
+touch hello
+
+# Print a message indicating that the file has been created
+echo "File hello has been created successfully."

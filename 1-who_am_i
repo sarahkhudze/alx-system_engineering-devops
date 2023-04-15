@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Use the id command to get information about the current user
+user_info=$(id)
+
+# Extract the effective username from the user_info string
+effective_username=$(echo "$user_info" | awk -F'[()]' '{print $2}')
+
+# Print the effective username
+echo "Effective username: $effective_username"
