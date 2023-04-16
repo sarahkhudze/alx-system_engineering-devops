@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Copy all HTML files from the current directory to the parent directory
+cp -u *.html ..
+
