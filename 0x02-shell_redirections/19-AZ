@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+if [ $# -eq 0 ]; then
+    read -p "Enter input: " input
+else
+    input=$(cat "$1")
+fi
+output=${input//A/Z}
+output=${output//c/e}
+echo "$output"

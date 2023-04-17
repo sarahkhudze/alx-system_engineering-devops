@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Read input from standard input
+while read word
+do
+    # Count the number of occurrences of the word in the input
+    count=$(grep -c -w "$word" -)
+
+    # If the count is exactly one, print the word
+    if [ "$count" -eq 1 ]
+    then
+        echo "$word"
+    fi
+done < "${1:-/dev/stdin}" | sort

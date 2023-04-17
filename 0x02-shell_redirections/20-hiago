@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Read input from command line arguments
+input="$#!/bin/bash
+
+# Read input from command line arguments
+input="$1"
+
+# Remove all occurrences of "c" and "C" using sed
+output=$(echo "$input" | sed 's/[cC]//g')
+
+# Print the modified input
+echo "$output"
+

@@ -1,0 +1,3 @@
+#!/bin/bash specifies the interpreter to use for the script (in this case, bash).
+ls -la runs the ls command with the -la option, which lists the files and directories in the current directory with additional details.
+> redirects the output of the ls command to the file named ls_cwd_content, overwriting the file if it already exists or creating it if it does not exist.

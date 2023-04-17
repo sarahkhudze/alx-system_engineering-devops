@@ -1,0 +1,9 @@
+#!/bin/bash
+
+
+num_subdirs=$(find . -mindepth 1 -maxdepth 1 -type d | wc -l)
+
+num_hidden_subdirs=$(find . -mindepth 1 -maxdepth 1 -type d -name '.*' | wc -l)
+
+total_subdirs=$((num_subdirs + num_hidden_subdirs)
+echo "Total directories and sub-directories: $total_subdirs"

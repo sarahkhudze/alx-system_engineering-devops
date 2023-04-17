@@ -1,0 +1,10 @@
+#!/bin/bash
+
+shopt -s globstar nullglob nocaseglob
+
+for file in **/*.gif; do
+    if [[ -f "$file" ]]; then
+        filename=$(echo "$file" | sed 's/\.gif$//')
+        echo "$(basename "$filename")"
+    fi
+done | sort -f -d | tr '\n' '\0' | xargs -0 -I{} echo "{}"

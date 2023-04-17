@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Parse the TSV file and extract the host/IP column
+hosts=$(cut -f1 logs.tsv)
+
+# Sort the hosts and count the number of occurrences of each host
+sorted_hosts=$(echo "$hosts" | sort | uniq -c)
+
+# Sort the hosts by the number of requests in descending order
+sorted_hosts=$(echo "$sorted_hosts" | sort -rn)
+
+# Display the top 11 hosts
+echo "$sorted_hosts" | head -n 11
