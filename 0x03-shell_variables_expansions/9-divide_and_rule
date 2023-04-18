@@ -1,0 +1,5 @@
+#!/bin/bash
+
+result=$(echo "$POWER / $DIVIDE" | bc -l)
+echo "The result is: $result"
+

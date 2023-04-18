@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -z "$POWER" ] || [ -z "$DIVIDE" ]; then
+  echo "Error: POWER or DIVIDE environment variable is not set."
+  exit 1
+fi
+result=$(echo "$POWER / $DIVIDE" | bc -l)
+

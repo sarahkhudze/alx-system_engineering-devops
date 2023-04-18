@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Function to encode text using rot13
+encode_rot13() {
+  echo "$1" | tr 'a-zA-Z' 'n-za-mN-ZA-M'
+}
+
+# Function to decode text using rot13
+decode_rot13() {
+  echo "$1" | tr 'n-za-mN-ZA-M' 'a-zA-Z'
+}
+
+# Check if the first argument is 'encode' or 'decode'
+if [ "$1" == "encode" ]; then
+  # Encode the second argument using rot13 and print the result
+  echo "$(encode_rot13 "$2")"
+elif [ "$1" == "decode" ]; then
+  # Decode the second argument using rot13 and print the result
+  echo "$(decode_rot13 "$2")"
+else
+  # Print usage instructions if the first argument is not 'encode' or 'decode'
+  echo "Usage: $0 [encode|decode] <text>"
+fi

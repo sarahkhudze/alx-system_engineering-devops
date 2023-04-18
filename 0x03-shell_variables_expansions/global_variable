@@ -1,0 +1,4 @@
+#!/bin/bash
+
+export POWER=1567
+export DIVIDE=2

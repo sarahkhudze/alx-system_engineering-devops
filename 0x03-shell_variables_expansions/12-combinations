@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for letter1 in {a..z}; do
+  for letter2 in {a..z}; do
+    if [[ "$letter1$letter2" == "oo" ]]; then
+      continue
+    elif [[ "$letter1$letter2" < "oo" ]]; then
+      echo "$letter1$letter2"
+    else
+      break
+    fi
+  done
+done

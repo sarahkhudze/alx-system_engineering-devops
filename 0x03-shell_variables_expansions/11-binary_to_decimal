@@ -1,0 +1,4 @@
+#!/bin/bash
+result=$((2#$BINARY))
+echo $result
+

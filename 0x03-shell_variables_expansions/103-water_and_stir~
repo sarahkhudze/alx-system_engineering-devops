@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Convert WATER and STIR to decimal
+water_dec=$(echo "ibase=water; ${WATER}" | bc)
+stir_dec=$(echo "ibase=stir; ${STIR}" | bc)
+
+# Add WATER and STIR in decimal
+result_dec=$((${water_dec} + ${stir_dec}))
+
+# Convert result to base bestchol
+result_bestchol=$(echo "obase=bestchol; ${result_dec}" | bc)
+
+# Print the result
+echo "${result_bestchol}"
